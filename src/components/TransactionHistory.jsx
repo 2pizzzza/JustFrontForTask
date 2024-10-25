@@ -10,7 +10,7 @@ const TransactionHistory = () => {
     useEffect(() => {
         const fetchTransactions = async () => {
             try {
-                const response = await axios.get('https://justtesttask.onrender.com/transactions/', {
+                const response = await axios.get('https://easy-completely-whale.ngrok-free.app/transactions/', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

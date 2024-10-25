@@ -12,13 +12,13 @@ const Transactions = () => {
     const [message, setMessage] = useState('');
 
     useEffect(() => {
-        fetch('https://justtesttask.onrender.com/coins/')
+        fetch('https://easy-completely-whale.ngrok-free.app/coins/')
             .then(response => response.json())
             .then(data => setCoins(data))
             .catch(error => console.error('Error fetching coins:', error));
 
         const token = localStorage.getItem('access');
-        fetch('https://justtesttask.onrender.com/wallet/', {
+        fetch('https://easy-completely-whale.ngrok-free.app/wallet/', {
             headers: {
                 'Authorization': `Bearer ${token}`,
             }
@@ -46,7 +46,7 @@ const Transactions = () => {
             transaction_type: transactionType
         };
 
-        fetch('https://justtesttask.onrender.com/transaction/', {
+        fetch('https://easy-completely-whale.ngrok-free.app/transaction/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

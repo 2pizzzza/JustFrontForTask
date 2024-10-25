@@ -17,7 +17,7 @@ const Home = () => {
     };
 
     useEffect(() => {
-        const socket = new WebSocket('wss://justtesttask.onrender.com/ws/bitcoin_price/');
+        const socket = new WebSocket('wss://easy-completely-whale.ngrok-free.app/ws/bitcoin_price/');
 
         socket.onmessage = (event) => {
             const data = JSON.parse(event.data);
