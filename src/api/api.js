@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://justtesttask.onrender.com/api';
+const API_URL = 'https://easy-completely-whale.ngrok-free.app/api';
 
 export const loginUser = async (username, password) => {
     try {
